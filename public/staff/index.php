@@ -7,8 +7,10 @@
 
 <?php include(SHARED_PATH ."/staff_header.php"); ?>
     <div class="content">
-        <ul>
-            <li><a href="index.php">home</a></li>
-        </ul>
+        <div class="main_content">
+            <ul>
+                <li><a href="subjects/index.php">Subjects</a></li>
+            </ul>
+        </div>
     </div>
 <?php include(SHARED_PATH . "/staff_footer.php"); ?>

@@ -14,3 +14,8 @@
     <header>
         <h1>Global Bank International</h1>
     </header>
+    <navigation>
+        <ul>
+            <li><a href="<?php echo url_for('/staff/index.php'); ?>">Menu</a></li>
+        </ul>
+    </navigation>
