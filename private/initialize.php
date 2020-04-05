@@ -14,12 +14,12 @@
     // define("WWW_ROOT", '/~grindpants/globe_bank/public');
     // define("WWW_ROOT", '');
     // * Can dynamically find everything in URL up to "/public"
-    $public_end = strpos($_SERVER['SCRIPT_NAME'], '/public');
-    echo $_SERVER['SCRIPT_NAME'];
-    var_dump($public_end);
+    $public_end = strpos($_SERVER['SCRIPT_NAME'], '/public') + 7;
     $doc_root = substr($_SERVER['SCRIPT_NAME'], 0, $public_end);
-    echo $doc_root;
     define("WWW_ROOT", $doc_root);
+    // echo $_SERVER['SCRIPT_NAME'];
+    // var_dump($public_end);
+    // echo $doc_root;
 
     require_once('function.php');
 ?>
